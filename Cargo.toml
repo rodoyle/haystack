@@ -1,0 +1,14 @@
+[package]
+name = "haystack"
+version = "0.1.0"
+authors = ["Riley Doyle <riley.o.doyle@gmail.com>"]
+
+[lib]
+name = "haystack"
+crate-type = "dylib"
+
+[dependencies]
+
+[dependencies.cpython]
+version = '0.1'
+features = ["extension-module"]
