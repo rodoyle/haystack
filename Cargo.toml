@@ -2,13 +2,15 @@
 name = "haystack"
 version = "0.1.0"
 authors = ["Riley Doyle <riley.o.doyle@gmail.com>"]
+edition = "2018"
 
 [lib]
 name = "haystack"
-crate-type = "dylib"
+crate-type = ["lib", "cdylib"]
 
 [dependencies]
+fnv = "*"
 
-[dependencies.cpython]
-version = '0.1'
+[dependencies.pyo3]
+version = '0.11.1'
 features = ["extension-module"]
